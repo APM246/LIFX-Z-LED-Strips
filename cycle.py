@@ -9,7 +9,7 @@ IP_ADDRESS = "YOUR_IP_ADDRESS"
 
 light = MultiZoneLight(MAC_ADDRESS, IP_ADDRESS)
 
-PATH = "D:\\Media\\Photos\\Backgrounds\\LIFX"
+PATH = "PATH_TO_FOLDER_OF_PHOTOS"
 photos = listdir(PATH)
 photos = map(lambda x: '{0}\\{1}'.format(PATH, x), photos)
 for photo in photos:
